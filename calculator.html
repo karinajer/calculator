@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="homework-styles/calculator.css">
+</head>
+<body>
+  <div>
+    <p class="js-result result"></p>
+  </div>
+
+  <div>
+    <button onclick="
+    calculation('1');
+      " class="grey-button">1</button>
+    <button onclick="
+    calculation('2');
+    " class="grey-button">2</button>
+    <button onclick="
+    calculation('3');
+    " class="grey-button">3</button>
+    <button onclick="
+    calculation(' + ');
+    " class="orange-button">+</button>
+  </div>
+
+  <div>
+    <button onclick="
+    calculation('4');
+      " class="grey-button">4</button>
+    <button onclick="
+    calculation('5');
+    " class="grey-button">5</button>
+    <button onclick="
+    calculation('6');
+    " class="grey-button">6</button>
+    <button onclick="
+    calculation(' - ');
+    " class="orange-button">-</button>
+  </div>
+
+  <div>
+    <button onclick="
+    calculation('7'); 
+    " class="grey-button">7</button>
+    <button onclick="
+    calculation('8');
+    " class="grey-button">8</button>
+    <button onclick="
+    calculation('9');
+    " class="grey-button">9</button>
+    <button onclick="
+    calculation(' * ');
+    " class="orange-button">*</button>
+  </div>
+
+  <div>
+    <button onclick="
+    calculation('0'); 
+      " class="grey-button">0</button>
+    <button onclick="
+    calculation('.');
+    " class="grey-button">.</button>
+    <button onclick="
+    calculationResult = eval(calculationResult);
+    showCalculation();
+    " class="grey-button">=</button>
+    <button onclick="
+    calculation('/');
+    "class="orange-button">/</button>
+  </div>
+
+  <div>
+    <button onclick="
+    calculationResult = '';
+    showCalculation();
+    " class="clear-button">Clear</button>
+  </div>
+
+  <script src="homework-js/calculator.js"></script>
+</body>
+</html>
